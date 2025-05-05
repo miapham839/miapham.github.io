@@ -1,0 +1,37 @@
+---
+title: "STAT 244-SC"
+format: html
+---
+
+### 🔍 Final Project: Predicting Customer Churn with Logistic and LASSO Regression
+
+This project uses machine learning to address a core economic problem: customer retention. I built logistic and LASSO regression models to predict whether a bank customer will churn based on features like balance, age, activity status, and gender. Using 10-fold cross-validation and ROC-AUC for evaluation, I compared model performance and explored how LASSO can select the most economically meaningful predictors. The results provide actionable insights for firms aiming to reduce churn and improve customer lifetime value.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE)
+library(readr)
+library(purrr)
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(mosaic)
+library(gmodels)
+library(Sleuth3)
+```
+
+
+```{r}
+data <- read.csv('Bank Customer Churn Prediction.csv')
+head(data)
+```
+
+```{r}
+data %>%
+  ggplot(aes(x = churn, fill = country)) + 
+  geom_bar(position = "dodge") +
+  labs(x = 'Churn?', y = 'Counts', fill = 'Country') + 
+  scale_fill_manual(values = c("steelblue", "lightblue", "darkblue")) + 
+  theme_classic()
+```
+

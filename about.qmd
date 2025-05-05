@@ -1,12 +1,12 @@
 ---
-title: "About"
+title: "About Me"
 ---
 
-This is my website! I am a freshman at Mount Holyoke College majoring in Computer Science.
+Hi! My name is Mia, and I'm a freshman at Mount Holyoke College. I'm a Computer Science Major, and I'm also interested in Data Science and Machine Learning.
+
+Reach me via LinkedIn: https://www.linkedin.com/in/mia-pham-42ab36330/
+
 ---
 
-About this site
+Mia Pham
 
-```{r}
-1 + 1
-```

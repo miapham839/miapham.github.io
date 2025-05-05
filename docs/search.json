@@ -4,13 +4,27 @@
     "href": "index.html",
     "title": "Welcome to my Homepage!",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "This is my website! I am a freshman at Mount Holyoke College majoring in Computer Science.\n\nAbout this site\n\n1 + 1\n\n[1] 2"
+    "text": "Hi! My name is Mia, and I’m a freshman at Mount Holyoke College. I’m a Computer Science Major, and I’m also interested in Data Science and Machine Learning.\nReach me via LinkedIn: https://www.linkedin.com/in/mia-pham-42ab36330/\n\nMia Pham"
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "STAT 244-SC",
+    "section": "",
+    "text": "🔍 Final Project: Predicting Customer Churn with Logistic and LASSO Regression\nThis project uses machine learning to address a core economic problem: customer retention. I built logistic and LASSO regression models to predict whether a bank customer will churn based on features like balance, age, activity status, and gender. Using 10-fold cross-validation and ROC-AUC for evaluation, I compared model performance and explored how LASSO can select the most economically meaningful predictors. The results provide actionable insights for firms aiming to reduce churn and improve customer lifetime value.\n\ndata &lt;- read.csv('Bank Customer Churn Prediction.csv')\nhead(data)\n\n  customer_id credit_score country gender age tenure   balance products_number\n1    15634602          619  France Female  42      2      0.00               1\n2    15647311          608   Spain Female  41      1  83807.86               1\n3    15619304          502  France Female  42      8 159660.80               3\n4    15701354          699  France Female  39      1      0.00               2\n5    15737888          850   Spain Female  43      2 125510.82               1\n6    15574012          645   Spain   Male  44      8 113755.78               2\n  credit_card active_member estimated_salary churn\n1           1             1        101348.88     1\n2           0             1        112542.58     0\n3           1             0        113931.57     1\n4           0             0         93826.63     0\n5           1             1         79084.10     0\n6           1             0        149756.71     1\n\n\n\ndata %&gt;%\n  ggplot(aes(x = churn, fill = country)) + \n  geom_bar(position = \"dodge\") +\n  labs(x = 'Churn?', y = 'Counts', fill = 'Country') + \n  scale_fill_manual(values = c(\"steelblue\", \"lightblue\", \"darkblue\")) + \n  theme_classic()"
+  },
+  {
+    "objectID": "test.html#predicting-customer-churn-with-logistic-and-lasso-regression",
+    "href": "test.html#predicting-customer-churn-with-logistic-and-lasso-regression",
+    "title": "STAT 244-SC",
+    "section": "",
+    "text": "This project uses machine learning to address a core economic problem: customer retention. I built logistic and LASSO regression models to predict whether a bank customer will churn based on features like balance, age, activity status, and gender. Using 10-fold cross-validation and ROC-AUC for evaluation, I compared model performance and explored how LASSO can select the most economically meaningful predictors. The results provide actionable insights for firms aiming to reduce churn and improve customer lifetime value."
   }
 ]

@@ -9,10 +9,12 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: test.qmd
+        text: STAT-244SC
 
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
     toc: true
 
