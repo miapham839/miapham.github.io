@@ -4,9 +4,14 @@ title: "About Me"
 
 Hi! My name is Mia, and I'm a freshman at Mount Holyoke College. I'm a Computer Science Major, and I'm also interested in Data Science and Machine Learning.
 
-Reach me via LinkedIn: https://www.linkedin.com/in/mia-pham-42ab36330/
+::: {.column width="70%"}
+![Picture of Me](IMG_7809.jpg){fig-align="center" width="100%"}
+:::
 
----
+Reach me via LinkedIn:
+
+<https://www.linkedin.com/in/mia-pham-42ab36330/>
+
+------------------------------------------------------------------------
 
 Mia Pham
-
